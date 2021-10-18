@@ -21,7 +21,7 @@ object ListDictionary : IDictionary {
     }
 }
 
-fun main(args:Array<String>){
+fun main(){
     println(ListDictionary.getName())
     ListDictionary.add("Kecske")
     ListDictionary.add("Macska")
