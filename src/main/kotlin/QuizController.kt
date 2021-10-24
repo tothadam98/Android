@@ -40,6 +40,7 @@ class QuizController {
                     correctIndex = k-1;
                 }
                 k++
+                //
             }
             println("Please enter the number of your answer:")
             numberString = readLine()
