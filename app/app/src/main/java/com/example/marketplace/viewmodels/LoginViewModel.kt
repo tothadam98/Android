@@ -1,11 +1,16 @@
 import android.content.Context
 import android.util.Log
+import android.widget.Toast
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.marketplace.MyApplication
+import com.example.marketplace.model.ForgotPasswordRequest
 import com.example.marketplace.model.LoginRequest
 import com.example.marketplace.model.User
 import com.example.marketplace.repository.Repository
+import kotlinx.coroutines.launch
 
 class LoginViewModel(val context: Context, val repository: Repository) : ViewModel() {
     var token: MutableLiveData<String> = MutableLiveData()
@@ -29,5 +34,14 @@ class LoginViewModel(val context: Context, val repository: Repository) : ViewMod
         }
     }
 
-
+    suspend fun forgotPassword(username: String, email: String) {
+        val request =
+            ForgotPasswordRequest(username, email)
+        try {
+            val result = repository.forgotPassword(request)
+            Log.d("xxx", "MyApplication - token:  ${result.message}")
+        } catch (e: Exception) {
+            Log.d("xxx", "LoginViewModel - exception: ${e.toString()}")
+        }
+    }
 }
