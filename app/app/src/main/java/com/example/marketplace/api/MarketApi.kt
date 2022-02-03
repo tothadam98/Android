@@ -16,6 +16,13 @@ interface MarketApi {
     @POST(Constants.REGISTER_URL)
     suspend fun register(@Body request: RegisterRequest) : RegisterResponse
 
+    @POST(Constants.PRODUCTS_REMOVE_URL)
+    suspend fun removeProduct(@Header("token") token: String, @Query("product_id") product_id : String) : ProductRemoveResponse
+
+
+    @GET(Constants.GET_ORDER_URL)
+    suspend fun getOrders(@Header("token") token: String, @Header("limit") limit: String): OrderResponse
+
     @POST(Constants.FORGOT_PASSWORD_URL)
     suspend fun forgotPassword(@Body request: ForgotPasswordRequest): ForgotPasswordResponse
 }

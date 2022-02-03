@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation app:startDestination="@id/loginFragment" android:id="@+id/nav_graph" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:id="@+id/loginFragment" tools:layout="@layout/fragment_login" android:label="fragment_login" android:name="com.example.marketplace.fragments.LoginFragment">
+    <action android:id="@+id/action_loginFragment_to_listFragment" app:destination="@id/listFragment"/>
+    <action android:id="@+id/action_loginFragment_to_registerFragment" app:destination="@id/registerFragment"/>
+    <action android:id="@+id/action_loginFragment_to_forgotPasswordFragment" app:destination="@id/forgotPasswordFragment"/>
+</fragment>
+    <fragment android:id="@+id/listFragment" tools:layout="@layout/fragment_timeline" android:label="fragment_list" android:name="com.example.marketplace.fragments.TimelineFragment"> </fragment>
+    <fragment android:id="@+id/registerFragment" tools:layout="@layout/fragment_register" android:label="fragment_register" android:name="com.example.marketplace.fragments.RegisterFragment">
+    <action android:id="@+id/action_registerFragment_to_loginFragment" app:destination="@id/loginFragment"/>
+</fragment>
+    <fragment android:id="@+id/forgotPasswordFragment" android:label="ForgotPasswordFragment" android:name="com.example.marketplace.fragments.ForgotPasswordFragment"/>
+    <fragment android:id="@+id/myMarketFragment" android:label="MyMarketFragment" android:name="com.example.marketplace.fragments.MyMarketFragment"> </fragment>
+    <fragment android:id="@+id/myFaresFragment" tools:layout="@layout/fragment_my_fares" android:label="fragment_my_fares" android:name="com.example.marketplace.fragments.OngoingSalesFragment">
+    <action android:id="@+id/action_myFaresFragment_to_myFaresOrdersFragment" app:destination="@id/myFaresOrdersFragment"/>
+</fragment>
+    -<fragment android:id="@+id/myFaresOrdersFragment" tools:layout="@layout/fragment_my_fares_orders" android:label="fragment_my_fares_orders" android:name="com.example.marketplace.fragments.OngoingOrdersFragment">
+    <action android:id="@+id/action_myFaresOrdersFragment_to_myFaresFragment" app:destination="@id/myFaresFragment"/>
+
+</fragment>
+</navigation>

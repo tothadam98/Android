@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Marketplace</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="timeline">Timeline</string>
+    <string name="my_market">My market</string>
+    <string name="my_fares">My fares</string>
+    <string name="latest">Latest</string>
+    <string name="oldest">Oldest</string>
+    <string name="instructions">We will send you an email with instructions on how to reset your password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="email_me">Email me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="forgot_password1">Forgot Password?</string>
+    <string name="click_here">Click here</string>
+    <string name="new_to_bazar">New to Bazar?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="ongoing_sales">Ongoing sales</string>
+    <string name="ongoing_orders">Ongoing orders</string>
+    <string name="phone_number">Phone number</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount:</string>
+    <string name="price">Price:</string>
+    <string name="accepted">Accepted</string>
+    <string name="buyer">Buyer</string>
+</resources>
