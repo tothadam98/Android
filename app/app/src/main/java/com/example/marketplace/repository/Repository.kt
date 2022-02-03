@@ -12,6 +12,10 @@ class Repository {
         return RetrofitInstance.api.forgotPassword(request)
     }
 
+    suspend fun getProducts(token: String): ProductResponse {
+        return RetrofitInstance.api.getProducts(token,"300")
+    }
+
     suspend fun register(request: RegisterRequest): RegisterResponse {
         return RetrofitInstance.api.register(request)
     }

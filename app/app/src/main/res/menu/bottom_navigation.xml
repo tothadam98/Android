@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/timeline"
+        android:checked="true"
+        android:icon="@drawable/ic_group"
+        android:title="@string/timeline" />
+
+    <item
+        android:id="@+id/myMarket"
+        android:checked="false"
+        android:icon="@drawable/ic_my_market"
+        android:title="@string/my_market" />
+
+    <item
+        android:id="@+id/MyFares"
+        android:icon="@drawable/ic_union"
+        android:checked="false"
+        android:title="@string/my_fares" />
+
+</menu>
